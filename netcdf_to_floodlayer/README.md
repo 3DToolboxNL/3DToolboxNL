@@ -52,11 +52,11 @@ The `flood_planes` property describes a `class_mapping`, which maps integer PNG 
 
 ## Usage
 
-## Dependencies
+### Dependencies
 This project requires a Docker installation.
 
 ### Configuration
 Configure the project by editing `config.py`. Make sure to at least fill in SCENARIO, SUB_PATH and NC_PATH.
 
-## Running
+### Running
 Run `python3 main.py` to start the conversion. After the run (which should take about 2 minutes for each NetCDF file), you will find an output folder with the FloodLayer contents.
