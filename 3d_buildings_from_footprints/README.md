@@ -13,4 +13,6 @@ Configure the project by editing `main.py` under "0. CONFIGURATION". This config
 If your input data is not a set of KML files, you will have to adapt the script to fit your input format. This is (hopefully!) relatively easy because the script uses ogr2ogr. 
 
 ### Running
-Run `python3 main.py` to start the conversion. After the run, you will find an output folder with the 3D Tiles contents. The script will automatically start a python server that serves `index.html`, which loads Cesium to display the 3D Tiles.
+Run `python3 main.py` to start the conversion. The script will start a PostgreSQL docker container to do the dataprocessing in. The data also needs to be in a Postgres database for the creation of 3D Tiles using [pg2b3dm](https://github.com/Geodan/pg2b3dm).
+
+After the run, you will find an output folder with the 3D Tiles contents. The script will automatically start a python server that serves `index.html`, which loads Cesium to display the 3D Tiles.
