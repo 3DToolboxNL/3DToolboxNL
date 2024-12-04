@@ -10,6 +10,7 @@ Beschikbaar zijn:
 - 3dfreshem: Tools voor het werken met freshem data
 - Cesium Terrain Builder om een "quantized mesh" terreinmodel te maken als ondergrond in Cesium.
 - Cesium Terrain Server om een "quantized mesh" terreinmodel te serveren voor gebruik in Cesium.
+- NetCDF to FloodLayer, om een FloodLayer voor de Leia Viewer te genereren uit een NetCDF file.
 
 ## 3dgeotop
 
@@ -37,3 +38,8 @@ Deze documentatie is [hier](./ctb) te vinden.
 Cesium Terrain Server kan onder meer een "quantized mesh" terrein model uitserveren voor gebruik in Cesium. Dit is bestaande tooling. 3DtoolboxNL voegt alleen wat documentatie toe. 
 
 Deze documentatie is [hier](./cts) te vinden.
+
+## NetCDF to FloodLayer
+Overstromingsmodellen worden vaak als NetCDFs geleverd. Dit zijn een soort rasterfiles met veel lagen en vaak ook tijdinformatie. Deze tool kan NetCDF files lezen en omzetten naar een format (FloodLayer) die gelezen kan worden door de Leia Viewer voor 3D visualisatie.
+
+Deze documentatie is [hier](./netcdf_to_floodlayer/) te vinden.
