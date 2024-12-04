@@ -10,6 +10,7 @@ Beschikbaar zijn:
 - 3dfreshem: Tools voor het werken met freshem data
 - Cesium Terrain Builder om een "quantized mesh" terreinmodel te maken als ondergrond in Cesium.
 - Cesium Terrain Server om een "quantized mesh" terreinmodel te serveren voor gebruik in Cesium.
+- 3D buildings from footprints: een tool om 3DTiles te genereren van gebouw-footprints en hoogtewaardes
 
 ## 3dgeotop
 
@@ -37,3 +38,8 @@ Deze documentatie is [hier](./ctb) te vinden.
 Cesium Terrain Server kan onder meer een "quantized mesh" terrein model uitserveren voor gebruik in Cesium. Dit is bestaande tooling. 3DtoolboxNL voegt alleen wat documentatie toe. 
 
 Deze documentatie is [hier](./cts) te vinden.
+
+## 3D Buildings from footprints
+Deze tool kan met een dataset van gebouw-footprints met hoogtewaardes een simpele (LOD1.0) 3D Tiles maken.
+
+De documentatie is [hier](./3d_buildings_from_footprints) te vinden.
