@@ -76,7 +76,7 @@ def main(cfg, out):
         subprocess.run(["gdal_translate", "-q", "-of", "PNG", "-ot", "Byte", f"{cfg.TMP_DIR}/{file.replace(".tif", "")}_4326.tif", f"{cfg.OUTPUT_DIR}/{get_number(file, chars=cfg.N_CHARS_OUTPUT_TIF_FILE)}.png"])
 
     # remove temporary files
-    # subprocess.run(["rm", "-rf", cfg.TMP_DIR])
+    subprocess.run(["rm", "-rf", cfg.TMP_DIR])
 
     # remove .aux.xml files in output directory
     subprocess.run(f"rm -rf {cfg.OUTPUT_DIR}/*.png.aux.xml", shell=True)
