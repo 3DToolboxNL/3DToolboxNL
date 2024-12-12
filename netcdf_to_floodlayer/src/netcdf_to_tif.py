@@ -59,9 +59,9 @@ def main(cfg, out):
     ds = xu.open_dataset(cfg.NC_PATH)
 
     # Log some stats
-    logging.info(f"The earliest date in the data is: {ds[cfg.WATER_DEPTH_LAYER]["time"].values.min()}")
-    logging.info(f"The latest date in the data is: {ds[cfg.WATER_DEPTH_LAYER]["time"].values.max()}")
-    logging.info(f"The number of time steps is: {ds[cfg.WATER_DEPTH_LAYER]["time"].values.shape[0]} (source resolution: {cfg.SOURCE_TIME_RESOLUTION_MINUTES} minutes)")
+    logging.info(f"The earliest date in the data is: {ds[cfg.WATER_DEPTH_LAYER]['time'].values.min()}")
+    logging.info(f"The latest date in the data is: {ds[cfg.WATER_DEPTH_LAYER]['time'].values.max()}")
+    logging.info(f"The number of time steps is: {ds[cfg.WATER_DEPTH_LAYER]['time'].values.shape[0]} (source resolution: {cfg.SOURCE_TIME_RESOLUTION_MINUTES} minutes)")
 
     # Export the water depth layer to GeoTIFFs
     time_range = range(0, ds[cfg.WATER_DEPTH_LAYER]["time"].values.shape[0], int(cfg.TARGET_TIME_RESOLUTION_MINUTES / cfg.SOURCE_TIME_RESOLUTION_MINUTES))
